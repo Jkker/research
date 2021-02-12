@@ -1,211 +1,233 @@
-:global{
-  body{
-    padding:0;
-    margin:0;
-  }
+@main-color: #3273dc;
+@text-color: #4a4a4a;
+@text-hover-color: #000;
+:global {
+	body {
+		padding: 0;
+		margin: 0;
+	}
 }
+
 .Footer {
-  text-align: center;
+	text-align: center;
 }
 
 .Headerbar {
-  margin: 0 60px;
-  height: 58px;
+	margin: 0 20px;
+	height: 58px;
 }
 
 .Logo {
-  height: 36px;
-  cursor: pointer;
+	height: 36px;
+	cursor: pointer;
 }
 
 .AboutLink {
-  color: white;
-  float: right;
-  margin-right: 14px;
+	color: white;
+	float: right;
+	margin-right: 14px;
 }
 
 .SearchWrap {
-  position: relative;
+	position: relative;
 }
 
 .Search {
-  width: 100%;
-  height: 48px;
-  margin-top: 20px;
-  line-height: 40px;
-  padding: 0 10px;
-  border-radius: 6px;
-  font-size: 16px;
-  border: 1px #ccc solid;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-  outline: none;
-  box-sizing: border-box;
+	width: 100%;
+	height: 48px;
+	margin-top: 20px;
+	line-height: 40px;
+	padding: 0 10px;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 1px #ccc solid;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	outline: none;
+	box-sizing: border-box;
 }
 
 .SearchButton {
-  position: absolute;
-  top: 24px;
-  right: 7px;
-  width: 30px;
-  cursor: pointer;
-  background: #fff;
-  padding: 5px;
+	position: absolute;
+	top: 24px;
+	right: 7px;
+	width: 30px;
+	cursor: pointer;
+	background: #fff;
+	padding: 5px;
 }
 
 .TopSearch {
-  margin-top: 10px;
-  width: 480px;
-  display: inline-block;
+	margin-top: 10px;
+	width: 480px;
+	display: inline-block;
 
-  .Search {
-    margin-top: 0;
-    height:40px;
-    box-shadow: none;
-  }
+	.Search {
+		margin-top: 0;
+		height: 40px;
+		box-shadow: none;
+	}
 
-  .SearchButton {
-    top: 8px;
-    padding: 0 5px;
-    width:24px
-  }
+	.SearchButton {
+		top: 8px;
+		padding: 0 5px;
+		width: 24px;
+	}
 }
-.TopLogo{
-  width: 48px;
-  display: block;
-  float: left;
-  margin: 5px 8px 0 0 ;
+.TopLogo {
+	width: 40px;
+	display: block;
+	float: left;
+	margin: 10px 20px 0 0;
 }
 .SearchPage {
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-  background-color: rgba(238, 110, 115, 0.7);
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: absolute;
+	background-color: @main-color;
 }
 
 .SearchBar {
-  width: 546px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-left: -273px;
+	width: 546px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -273px;
 }
 .Logo {
-  height: 48px;
+	height: 48px;
 }
 
 .LogoWrap {
-  margin-bottom: 14px;
-  text-align: center;
+	margin-bottom: 14px;
+	text-align: center;
 }
- 
 
 .Header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  padding: 0 !important;
-  top: 0;
-  left: 0;
-  height: 60px !important;
-  background: #fff !important;
-  border-bottom: 2px solid rgba(238, 110, 115, 0.7) !important;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	padding: 0 !important;
+	top: 0;
+	left: 0;
+	height: 60px !important;
+	background: #fff !important;
+	border-bottom: 2px solid #d4d4d4 !important;
 }
 
 .Content {
-  position: relative;
-  padding-top: 60px;
-  overflow: hidden;
+	position: relative;
+	padding-top: 60px;
+	overflow: hidden;
 }
 
 .CoverWrap {
-  position: relative;
+	position: relative;
 }
 
-.Github{
-  color: rgba(238, 110, 115, 0.7);
-  text-decoration: none;
+.Github {
+	color: @main-color;
+	text-decoration: none;
 }
 
 .Info {
-  padding: 14px;
+	padding: 14px;
 }
 
 .Footer {
-  text-align: center;
-  padding: 5px 0px;
-  color: rgba(0, 0, 0, .65);
-  font-size: 14px;
-  background: #f0f2f5;
+	text-align: center;
+	padding: 5px 0px;
+	color: rgba(0, 0, 0, 0.65);
+	font-size: 14px;
+	background: #f0f2f5;
 }
 
-
 .Column {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .About {
-  min-height: 500px;
+	min-height: 500px;
 }
 
 .Cover {
-  width: 260px;
-  height: 146px;
-  box-shadow: 0 0 9px -1px rgba(0, 0, 0, .16);
-  border: 1px solid #e1e1e1;
+	width: 260px;
+	height: 146px;
+	box-shadow: 0 0 9px -1px rgba(0, 0, 0, 0.16);
+	border: 1px solid #e1e1e1;
 }
 
 .Reslut {
-  width: 1000px;
+	width: 1000px;
 }
 
 .Card {
-  display: flex;
-  width: 100%;
-  height: 172px;
-  padding: 14px 0;
-  border-bottom: 1px solid #d4d4d4;
-  overflow: hidden;
-  background: #fff;
+	display: flex;
+	width: 100%;
+	height: 172px;
+	padding: 14px 0;
+	border-bottom: 1px solid #d4d4d4;
+	overflow: hidden;
+	background: #fff;
 }
 
-.LinkWrap{
-  padding: 14px 110px;
+.LinkWrap {
+	padding: 0;
 }
-.Link{
-  display:inline-block;
-  text-decoration:none;
-  padding: 0 10px;
-  color: rgba(238, 110, 115, 0.7);
+.Link {
+	display: block;
+	text-decoration: none;
+	padding: 13px 19px;
+	color: @text-color;
+	&:hover {
+		color: @text-hover-color;
+		.LinkIcon{
+			filter: brightness(0)
+		}
+	}
 }
-:global([role=tabpanel]){
-  padding:0 !important;
+.Box {
+	padding: 13px 19px;
+	// margin-bottom: 3px;
 }
- 
+.LinkIcon{
+	height: 12px;
+	padding-left: 8px;
+	color: @text-color;
+	display: inline-block;
+	&:hover {
+		filter: brightness(0)
+	}
+}
+
+:global([role='tabpanel']) {
+	padding: 0 !important;
+}
+
 @media screen and (max-width: 750px) {
-  .SearchPage {
-    position:fixed;
-  }
-  .SearchBar{
-    width:90%;
-    margin-left: 0;
-    left: 5%;
-  }
-  .Headerbar{
-    margin: 0 10px;
-  }
-  .TopSearch{
-    width: 220px;
-  }
-  .LinkWrap{
-    padding:10px;
-  }
+	.SearchPage {
+		position: fixed;
+	}
+	.SearchBar {
+		width: 90%;
+		margin-left: 0;
+		left: 5%;
+	}
+	.Headerbar {
+		margin: 0 10px;
+	}
+	.TopSearch {
+		width: 220px;
+	}
+	.LinkWrap {
+		padding: 10px;
+	}
 }
-.Tip{
-  color: rgba(238, 110, 115, 0.7);
-  text-decoration: none;
-  margin-top: 20px;
-  margin-left: 10px;
-  font-size: 13px;
+.Tip {
+	color: @main-color;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 13px;
 }

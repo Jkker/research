@@ -5,7 +5,7 @@ import favicon from '../static/favicon.png';
 
 export default ({ onSearch, keyword, setKeyword }) => (
   <header className={style.Headerbar}>
-    <a to="/" onClick={()=>setKeyword('')}><img className={style.TopLogo} src={favicon} alt="" /></a>
+    <a href="/" onClick={()=>setKeyword('')}><img className={style.TopLogo} src={favicon} alt="" /></a>
     <Search
       className={style.TopSearch}
       size="large"

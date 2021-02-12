@@ -7,7 +7,7 @@ import {
   lifecycle
 } from "recompose";
 import style from "./style.less";
-import search from '../static/search.png';
+import search from '../static/loupe.png';
 let timer = null;
 export default compose(
   setDisplayName(__filename),
@@ -52,11 +52,11 @@ export default compose(
       }
     }
   })
-)(({ 
+)(({
   className,
-  innerValue, 
-  onChange, 
-  onKeyUp, 
+  innerValue,
+  onChange,
+  onKeyUp,
   onSearch,
   registerRef,
 }) => (
