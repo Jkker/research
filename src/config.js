@@ -41,10 +41,12 @@ export const links = (keyword) => [
 	// },
 ];
 
-export const tabs = (keyword) => [
+export const tabs = (keyword, jsproxy = false) => [
 	{
 		title: 'Google',
-		link: `https://www.google.com/search?igu=1&ei=&pws=0&gl=us&gws_rd=cr&safe=off&source=hp&q=${keyword}&oq=${keyword}`,
+		link: jsproxy
+			? `https://jsproxy.jerrykjia.workers.dev/-----https://www.google.com/search?igu=1&ei=&pws=0&gl=us&gws_rd=cr&safe=off&source=hp&q=${keyword}&oq=${keyword}`
+			: `https://www.google.com/search?igu=1&ei=&pws=0&gl=us&gws_rd=cr&source=hp&q=${keyword}&oq=${keyword}`,
 	},
 	{
 		title: '百度',

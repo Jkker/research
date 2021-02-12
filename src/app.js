@@ -11,7 +11,8 @@ import { links, tabs } from './config';
 import Header from './header';
 import Search from './search';
 import style from './style.less';
-console.log(customStyle);
+// import https from 'https';
+// console.log(customStyle);
 
 const keywordLength = (str) => str && str.trim() && str.trim().length;
 
@@ -52,6 +53,13 @@ export default compose(
 			const search = document.location.search.substring(1);
 			const { onSearch, setSearching } = this.props;
 			const keywords = QueryString.parse(search);
+			$.getJSON(
+				'https://ipgeolocation.abstractapi.com/v1/?api_key=0b43e148aa7946d9a8e10f504306a8d7',
+				function (data) {
+					console.log(data.ip_address);
+					console.log(data.country);
+				}
+			);
 
 			onSearch(keywords.q);
 			setSearching(true);
